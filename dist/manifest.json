@@ -1,24 +1,45 @@
 {
   "manifest_version": 2,
-  "name": "WebExtension Template",
+  "name": "__MSG_extensionName__",
   "version": "0.1.0",
   "browser_specific_settings": {
     "gecko": {
-      "id": "webextension-template@menhera.org",
+      "id": "background-pin@menhera.org",
       "strict_min_version": "91.0"
     }
   },
+  "default_locale": "en",
   "author": "Menhera.org",
-  "homepage_url": "https://github.com/menhera-org/webextension-template",
-  "description": "Description.",
+  "homepage_url": "https://github.com/menhera-org/background-pin",
+  "description": "__MSG_extensionDescription__",
   "permissions": [
+    "storage",
+    "<all_urls>"
   ],
   "incognito": "spanning",
   "background": {
     "page": "background.html"
   },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "pin-disabled.svg"
+    },
+    "default_title": "__MSG_browserActionTitle__"
+  },
   "icons": {
-    "48": "icon.svg",
-    "96": "icon.svg"
+    "48": "pin-disabled.svg",
+    "96": "pin-disabled.svg"
   }
 }

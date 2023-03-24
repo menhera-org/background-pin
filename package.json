@@ -1,7 +1,7 @@
 {
-  "name": "webextension-template",
+  "name": "background-pin",
   "version": "0.1.0",
-  "description": "A template for webextension development",
+  "description": "Firefox add-on to prevent tabs from going background.",
   "main": "./dist/index.js",
   "scripts": {
     "build": "node script/clean.js ; eslint . ; webpack ; node script/build.js",
@@ -10,7 +10,7 @@
     "test": "node script/test.js"
   },
   "author": "Menhera.org",
-  "license": "GPL-3.0-or-later",
+  "license": "MPL-2.0",
   "devDependencies": {
     "@types/node": "^18.11.18",
     "@types/webextension-polyfill": "^0.10.0",

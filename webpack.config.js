@@ -21,6 +21,10 @@ module.exports = {
       import: './src/background.ts',
       filename: 'background.js',
     },
+    'content': {
+      import: './src/content/content.ts',
+      filename: 'content.js',
+    },
   },
 
   output: {

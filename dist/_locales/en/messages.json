@@ -1,0 +1,18 @@
+{
+  "extensionDescription": {
+    "message": "Firefox add-on to prevent tabs from going background.",
+    "description": "Description of the extension."
+  },
+  "extensionName": {
+    "message": "Background Pin",
+    "description": "Name of the extension."
+  },
+  "browserActionTitle": {
+    "message": "Prevent tabs from going background",
+    "description": "Title of the browser action."
+  },
+  "browserActionTitleEnabled": {
+    "message": "Preventing tabs from going background",
+    "description": "Title of the browser action when enabled."
+  }
+}

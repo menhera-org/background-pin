@@ -1,0 +1,30 @@
+{
+  "name": "webextension-template",
+  "version": "0.1.0",
+  "description": "A template for webextension development",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "node script/clean.js ; eslint . ; webpack ; node script/build.js",
+    "watch": "webpack -w",
+    "clean": "node script/clean.js ; node script/clean-builds.js",
+    "test": "node script/test.js"
+  },
+  "author": "Menhera.org",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/webextension-polyfill": "^0.10.0",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.33.0",
+    "ts-loader": "^9.4.2",
+    "typedoc": "^0.23.24",
+    "typescript": "<4.10.0",
+    "web-ext": "^7.5.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "webextension-polyfill": "^0.10.0"
+  }
+}

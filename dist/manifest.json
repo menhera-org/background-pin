@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "WebExtension Template",
+  "version": "0.1.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "webextension-template@menhera.org",
+      "strict_min_version": "91.0"
+    }
+  },
+  "author": "Menhera.org",
+  "homepage_url": "https://github.com/menhera-org/webextension-template",
+  "description": "Description.",
+  "permissions": [
+  ],
+  "incognito": "spanning",
+  "background": {
+    "page": "background.html"
+  },
+  "icons": {
+    "48": "icon.svg",
+    "96": "icon.svg"
+  }
+}
